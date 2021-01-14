@@ -1,0 +1,30 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "parserOptions": {
+    "ecmaFeatures": { "jsx": true }
+  },
+  "extends": [
+    "eslint:recommended", // eslint default rules
+    "plugin:@typescript-eslint/eslint-recommended", // eslint TypeScript rules (github.com/typescript-eslint/typescript-eslint)
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended", // eslint react rules (github.com/yannickcr/eslint-plugin-react)
+    "plugin:jsx-a11y/recommended", // accessibility plugin
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {},
+      { "usePrettierrc": true, "endOfLine": "auto" }
+    ],
+    "jsx-a11y/anchor-is-valid": "off",
+    "react/prop-types": "off" // We turn off prop-types rule, as we will use TypeScript's types instead.
+  }
+}
