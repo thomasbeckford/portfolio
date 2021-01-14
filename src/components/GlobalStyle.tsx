@@ -40,7 +40,7 @@ function GlobalStyle(): JSX.Element {
         }
         a:after {
           background: none repeat scroll 0 0 transparent;
-          bottom: 20px;
+          bottom: -5px;
           content: '';
           display: block;
           height: 5px;

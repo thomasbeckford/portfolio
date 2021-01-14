@@ -51,10 +51,16 @@ const AboutPage = (): JSX.Element => {
       }
     }
   `
+  const ContactTitle = styled.div`
+    @media (min-width: 768px) {
+      line-height: 160px;
+    }
+    line-height: 60px;
+  `
 
   const heroHeader = {
     data: {
-      title: <>Are you minding a project?</>,
+      title: <ContactTitle>Are you minding a project?</ContactTitle>,
       subtitle: (
         <>
           <LetsTalk href="mailto:tebeckford@gmail.com">Let's Talk</LetsTalk>

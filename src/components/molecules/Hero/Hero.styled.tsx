@@ -15,11 +15,13 @@ export const HeroTitle = styled.div`
   font-size: 50px;
   margin-bottom: 0px;
   font-weight: bold;
+  line-height: 40px;
 
   @media (min-width: 768px) {
     font-size: 165px;
     margin-bottom: 0px;
     font-weight: bold;
+    line-height: 120px;
   }
 
   animation: opacity-animation 2s forwards;

@@ -47,6 +47,30 @@ const IndexPage = (): JSX.Element => {
     cursor: pointer;
   `
 
+  const Image = styled.img`
+    @media (min-width: 768px) {
+      width: 300px;
+      max-height: 300px;
+      border-radius: 20em;
+      animation: scaleImage 0.3s 1;
+
+      @keyframes scaleImage {
+        0% {
+          opacity: 0.1;
+          // transform: scale(1);
+        }
+        50% {
+          opacity: 0.5;
+          // transform: scale(1.1);
+        }
+        100% {
+          opacity: 1;
+          // transform: scale(1);
+        }
+      }
+    }
+  `
+
   const MainPageContainer = styled.div`
     @media (min-width: 768px) {
       display: flex;
@@ -54,7 +78,7 @@ const IndexPage = (): JSX.Element => {
       align-items: center;
       text-align: left;
       padding-top: 50px;
-
+      
     }
     padding-top: 10px;
     padding:20px;
@@ -103,7 +127,7 @@ const IndexPage = (): JSX.Element => {
           <HeroInfo {...heroHeader} />
         </div>
         <MainImage>
-          <img alt="thomas" src={'thomas.jpeg'} />
+          <Image alt="thomas" src={'thomas.jpeg'} />
         </MainImage>
       </MainPageContainer>
     </>
