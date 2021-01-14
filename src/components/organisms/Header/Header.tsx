@@ -7,7 +7,7 @@ import {
 } from './Header.styled'
 import { Sun, Moon } from '@styled-icons/fa-solid' // import Sun and Moon icons
 import Switch from 'react-switch'
-
+import styled from '@styled'
 import Link from 'next/link'
 
 type HeaderProps = {
@@ -26,6 +26,14 @@ const items: MenuItem[] = [
   { text: 'CONTACT ME', href: '/contact' }
 ]
 
+const NavLink = styled.a`
+  font-size: 15px;
+  cursor: pointer;
+  @media (min-width: 768px) {
+    font-size: 20px;
+  }
+`
+
 function Header({ isDark, setIsDark }: HeaderProps): JSX.Element {
   return (
     <HeaderContainer>
@@ -38,7 +46,7 @@ function Header({ isDark, setIsDark }: HeaderProps): JSX.Element {
               return (
                 <li key={href}>
                   <Link href={href}>
-                    <a>{text}</a>
+                    <NavLink>{text}</NavLink>
                   </Link>
                 </li>
               )

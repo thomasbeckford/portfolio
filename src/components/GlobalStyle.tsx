@@ -10,7 +10,10 @@ function GlobalStyle(): JSX.Element {
     <Global
       styles={css`
         * {
-          @import url(//db.onlinewebfonts.com/c/d1a880e08bdb2140abd96f8f8d2d9515?family=Bloc);
+          @font-face {
+            font-family: 'Bloc';
+            src: url('./BlocRegular.ttf');
+          }
           box-sizing: border-box;
           margin: 0;
           padding: 0;
