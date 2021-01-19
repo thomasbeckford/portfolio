@@ -41,7 +41,7 @@ export const HeroDescription = styled.div`
 
   @media (min-width: 768px) {
     font-size: 18px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     opacity: 70%;
   }
 `

@@ -1,6 +1,7 @@
 import React from 'react'
 import HeroInfo from '@/components/organisms/HeroInfo/index'
 import styled from '@styled'
+import Texty from 'rc-texty'
 
 const AboutPage = (): JSX.Element => {
   const LetsTalk = styled.a`

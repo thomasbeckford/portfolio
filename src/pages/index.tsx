@@ -1,6 +1,7 @@
 import React from 'react'
 import HeroInfo from '@/components/organisms/HeroInfo/index'
 import styled from '@styled'
+import Texty from 'rc-texty'
 
 const IndexPage = (): JSX.Element => {
   const HomeDescription = styled.div`
@@ -20,19 +21,17 @@ const IndexPage = (): JSX.Element => {
       subtitle: 'I am Thomas',
       description: (
         <HomeDescription>
-          <p>
-            I am a Full Stack Web Developer, based in{' '}
-            <span style={{ color: '#3a9fbf' }}>Argentina</span>.
-          </p>
-          <p>
+          <Texty interval={20} mode="smooth">
+            I am a Full Stack Web Developer, based in Argentina.
+          </Texty>
+          <Texty interval={20} mode="reverse" className="lightblue">
             National and international customers have relied on me for web
             projects.
-          </p>
-          <p>
-            {' '}
+          </Texty>
+          <Texty interval={20} mode="smooth">
             As a freelancer, I work also with web agencies and startaups, to
-            create the best experience for the business.{' '}
-          </p>
+            create the best experience for the business.
+          </Texty>
         </HomeDescription>
       )
     }

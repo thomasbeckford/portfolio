@@ -8,10 +8,9 @@ export const CardContainer = styled.div`
   color: ${props => props.theme.color.primary};
 
   @media (min-width: 768px) {
-    height: 420px;
-    width: 270px;
+    margin: 0.5em;
     background: ${props => props.theme.color.cardBackground};
-    padding: 70px 38px;
+    padding: 2em;
     border-radius: 12px;
     color: ${props => props.theme.color.primary};
   }
@@ -36,8 +35,8 @@ export const CardTitle = styled.div`
 
   @media (min-width: 768px) {
     margin-top: 40px;
-    font-size: 25px;
-    font-weight: 500;
+    font-size: 45px;
+    font-weight: 400;
     padding-left: 0;
   }
 `
@@ -46,12 +45,10 @@ export const CardDescription = styled.div`
   margin-bottom: 10px;
 
   @media (min-width: 768px) {
-    margin-top: 20px;
-    margin-bottom: 40px;
     line-height: 28px;
     opacity: 70%;
-    font-size: 16px;
+    font-size: 20px;
     padding: 0px;
-    margin-bottom: 10px;
+    marign: 0px;
   }
 `

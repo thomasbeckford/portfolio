@@ -57,6 +57,9 @@ function GlobalStyle(): JSX.Element {
         a {
           position: relative;
         }
+        .lightblue {
+          color: #3a9fbf;
+        }
       `}
     />
   )

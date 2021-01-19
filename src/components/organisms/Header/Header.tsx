@@ -1,3 +1,4 @@
+import React from 'react'
 import {
   HeaderContainer,
   Logo,
@@ -38,8 +39,6 @@ function Header({ isDark, setIsDark }: HeaderProps): JSX.Element {
   return (
     <HeaderContainer>
       <NavbarContainer>
-        <Logo>♥</Logo>
-
         <Menu>
           <ul>
             {items.map(({ href, text }) => {

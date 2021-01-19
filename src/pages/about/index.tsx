@@ -1,16 +1,26 @@
 import React from 'react'
 import HeroServices from '@/components/organisms/HeroServices/index'
 import HeroInfo from '@/components/organisms/HeroInfo/index'
+import styled from '@styled'
+import TweenOne from 'rc-tween-one'
 
 const AboutPage = (): JSX.Element => {
+  const Subtitle = styled.p`
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding: 0px;
+
+    @media (min-width: 768px) {
+      margin-top: 50px;
+      font-size: 60px;
+    }
+  `
+
   const heroHeader = {
     data: {
       title: 'About me',
-      description: (
-        <div style={{ marginTop: '10px', marginBottom: '0px', padding: '0px' }}>
-          Main stack
-        </div>
-      )
+      description: <Subtitle>Main stack</Subtitle>
     }
   }
 
@@ -52,9 +62,55 @@ const AboutPage = (): JSX.Element => {
     ]
   }
 
+  const ImageDiv = styled.div`
+    width: 150px;
+    text-align: center;
+    img {
+      width: 90px;
+      cursor: pointer;
+      margin: 0px;
+      padding: 0px;
+    }
+    p {
+      color: lightblue;
+      text-decoration: underline;
+    }
+    &:hover p {
+      transition: 0.3s;
+      color: blue;
+    }
+    &:hover img {
+      transition: 1s;
+      transform: rotate(360deg);
+    }
+    @media (min-width: 768px) {
+      width: 600px;
+      margin: 0 auto;
+      font-size: 30px;
+      text-align: center;
+      cursor: pointer;
+      img {
+        cursor: pointer;
+        width: 150px;
+      }
+      a:after {
+        background: inherit;
+      }
+    }
+  `
+
   return (
     <>
-      <HeroInfo {...heroHeader} />
+      <div style={{ display: 'flex' }}>
+        <HeroInfo {...heroHeader} />
+
+        <ImageDiv>
+          <a href="https://github.com/thomasbeckford">
+            <img src="github.jpg" alt="github" />
+            <p style={{ margin: '0px', padding: 0 }}>Check my github!</p>
+          </a>
+        </ImageDiv>
+      </div>
       <HeroServices {...heroServices} />
     </>
   )
