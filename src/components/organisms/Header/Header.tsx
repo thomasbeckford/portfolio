@@ -63,7 +63,7 @@ function Header({ isDark, setIsDark }: HeaderProps): JSX.Element {
             onHandleColor="#303030"
             offHandleColor="#fafafa"
             uncheckedIcon={
-              <Moon color="#6e40c9" size={21} style={{ margin: '5px 0px' }} />
+              <Moon color="#F4F1C9" size={21} style={{ margin: '5px 0px' }} />
             }
             checkedIcon={
               <Sun color="yellow" size={23} style={{ margin: '4px 3px' }} />
