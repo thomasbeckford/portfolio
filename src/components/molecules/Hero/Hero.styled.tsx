@@ -7,7 +7,7 @@ export const HeroSubTitle = styled.div`
   font-weight: bold;
 
   @media (min-width: 768px) {
-    font-size: 165px;
+    font-size: 135px;
     font-weight: bold;
   }
 `
@@ -22,6 +22,7 @@ export const HeroTitle = styled.div`
     margin-bottom: 0px;
     font-weight: bold;
     line-height: 120px;
+    padding-top: 50px;
   }
 
   animation: opacity-animation 2s forwards;

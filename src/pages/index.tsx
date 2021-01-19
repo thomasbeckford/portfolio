@@ -76,7 +76,7 @@ const IndexPage = (): JSX.Element => {
       justify-content: space-evenly;
       align-items: center;
       text-align: left;
-      padding-top: 50px;
+
       
     }
     padding-top: 10px;
