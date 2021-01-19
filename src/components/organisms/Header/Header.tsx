@@ -1,7 +1,6 @@
 import React from 'react'
 import {
   HeaderContainer,
-  Logo,
   NavbarContainer,
   Menu,
   Container

@@ -2,7 +2,6 @@ import React from 'react'
 import HeroServices from '@/components/organisms/HeroServices/index'
 import HeroInfo from '@/components/organisms/HeroInfo/index'
 import styled from '@styled'
-import TweenOne from 'rc-tween-one'
 
 const AboutPage = (): JSX.Element => {
   const Subtitle = styled.p`
