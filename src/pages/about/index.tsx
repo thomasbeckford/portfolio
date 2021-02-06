@@ -111,14 +111,13 @@ const AboutPage = (): JSX.Element => {
           </a>
         </ImageDiv>
       </div>
+      <HeroServices {...heroServices} />
       <div style={{ marginBottom: '20px' }}>
         <img
           src="https://github-readme-stats.vercel.app/api?username=thomasbeckford&theme=react"
           alt="github"
         />
       </div>
-
-      <HeroServices {...heroServices} />
     </>
   )
 }
