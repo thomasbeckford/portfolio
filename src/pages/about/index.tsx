@@ -98,11 +98,12 @@ const AboutPage = (): JSX.Element => {
     }
   `
 
+  // [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=thomasbeckford&repo=portfolio&theme=react)](https://github.com/thomasbeckford/portfolio)
+
   return (
     <>
       <div style={{ display: 'flex' }}>
         <HeroInfo {...heroHeader} />
-
         <ImageDiv>
           <a href="https://github.com/thomasbeckford">
             <img src="github.jpg" alt="github" />
@@ -110,6 +111,13 @@ const AboutPage = (): JSX.Element => {
           </a>
         </ImageDiv>
       </div>
+      <div style={{ marginBottom: '20px' }}>
+        <img
+          src="https://github-readme-stats.vercel.app/api?username=thomasbeckford&theme=react"
+          alt="github"
+        />
+      </div>
+
       <HeroServices {...heroServices} />
     </>
   )
